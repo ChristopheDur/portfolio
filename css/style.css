@@ -1,0 +1,124 @@
+/* adresse de lien police css Google font  https://fonts.google.com/ */
+
+/******************
+/*** CSS GLOBAL **/
+/*****************/
+
+body {
+  font-family: "Arial, Calibri, sans-serif";
+  margin: 0; /* on supprime les marges */
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+p,
+li {
+  line-height: 160%;
+}
+.d-flex {
+  display: flex;
+}
+
+/********************
+/* CSS PAR SECTION */
+/*******************/
+
+/* header */
+/**********/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/laptop.jpg); /* on ajoute un dégradé derrière l'image en modifiant la transparence */
+  background-size: cover; /* l'image s'adapte à la taille de l'écran en gardant les proportions*/
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 20px 0; /* on veut éloigner le h1 */
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 30px;
+}
+
+nav img {
+  width: 75px; /* 100px */
+}
+header a {
+  color: inherit; /* hérite du header */
+  /* color: white; */
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin: 200px 0;
+  letter-spacing: 8px;
+}
+
+/* main */
+/*********/
+
+/* devise */
+
+/* fabrication */
+main #fabrication {
+  background-image: linear-gradient(#b9b4d3, #514f74);
+  text-align: center;
+  padding: 30px 0;
+  color: white;
+}
+
+main #fabrication li {
+  /* une ajoute un espace entre les li */
+  margin-top: 50px;
+}
+
+/* grille du concept */
+
+/*footer */
+footer {
+  background-size: cover; /* l'image s'adapte à la taille de l'écran en gardant les proportions*/
+  background-position: center;
+  text-align: center; /* au centre */
+  padding: 15px 0;
+  background-color: #514f74;
+  color: white;
+}
+
+/********
+Arrondi des images et icones
+/*****************/
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+/*************************
+Responsive
+/*************************/
+
+/*** tablette **/
+
+/********************/

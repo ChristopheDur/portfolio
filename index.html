@@ -1,86 +1,159 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
-    <meta charset="utf-8">
-   <meta name="viewport" content ="width=device-width, initial-scale=1.0">
-   <title>T<!DOCTYPE html>
-<html lang="fr">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Portfolio</title>
 
-<head>
-    <meta charset="utf-8">
-    <title>JavaScript</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <section>
-        <h1><i class="fas fa-tasks"></i> Todo Liste</h1>
-
-        <!-- Contenu du carnet d'adresses (liste de contacts) -->
-        <section id="todo">
-            <ul class="list">
-            </ul>
-        </section>
-
-        <!-- Détails d'une tâche en particulier -->
-        <aside id="task-details" class="hide">
-            <h3></h3>
-            <p></p>
-            <a href="#" id="editer">Editer cette tâche</a><br/><br/>
-            <a href="#" id="supprimer">Supprimer cette tâche</a>
-        </aside>
-
-        <nav>
-            <ul class="menu">
-                <li><button id="add-task" title="Ajouter une tâche"><i class="fa fa-plus"></i></button></li>
-                <li><button id="clear-todo" title="Effacer les tâches"><i class="fa fa-trash"></i></button>
-                </li>
-            </ul>
-        </nav>
-    </section>
-    
-
-    <!-- Le formulaire de saisie de tâche ne s'affiche pas au démarrage -->
-    <form id="task-form" class="standard-form hide" data-mode="add">
-        <hr>
-        <ul class="">
-            <li>
-                <label for="lvl">Niveau d'accomplissement :</label>
-                <select id="lvl" name="lvl" >
-                    <option value="0">Pas commencé</option>
-                    <option value="25">25% - Commencé</option>
-                    <option value="50">50% - En cours</option>
-                    <option value="75">75% - En cours</option>
-                    <option value="100">100% - Terminé</option>
-                </select>
-            </li>
-            <li>
-                <label for="name">Nom de la tâche :</label>
-                <input id="name" type="text" name="name" >
-            </li>
-            <li>
-                <label for="description">Description de la tâche :</label>
-                <textarea name="description" id="description" cols="30" rows="10" ></textarea>
-            </li>
-            <li>
-                <input type="submit" id="save" value="Enregistrer">
-            </li>
+  <header>
+  <!--<header class="container text-white text-center"> -->
+      <div class="container text-white py-3">
+      <!--  création d'une classe div à l'extérieur de la <nav>  -->
+      <nav class="d-flex justify-content-between align-item-center">
+        <a><img src="img/logo2VV.png" alt="image"></a>
+        <ul class="d-flex text-uppercase font-weight-bold">
+          <li class="ml-5"><a href="#accueil">Accueil</a></li>
+          <li class="ml-5"><a href="#produits">Réalisations</a></li>
+          <li class="ml-5"><a href="#contact">Contact</a></li>
         </ul>
-    </form>
-    <script src="js/main.js" type="module"></script>
-</body>
+      </nav>
+      <div class="text-center">
+            <h1 class="text-uppercase font-weight-bold mb-5">Christophe Durand</h1> 
+            <h2 class="text-uppercase font-weight-bold mb-4">Concepteur et développeur d'applications</h2>
+            <h2 class="mb-5">Des solutions adaptées à vos besoins</h2>
+      </div>
+  </header>
 
-</html>est GH PAGES</title>
-</head>
+  <main>
+<section class="container text-center mb-10">
+  <h1 class="w-50 mx-auto">Présentation</h1>
+  <h2 class="w-150 mx-auto">Après une expérience dans le domaine de l'agro-alimentaire,
+     et notament dans le secteur des vins, j'ai décidé de me former dans le domaine de 
+     la conception d'applications afin de faciliter la vie des utilisateurs dans leur travail au quotidien.
+  </h2>
+</section>
 
-<body>
-   <h1>Essai PortFolio publié sur GiHub !!!</h1>
+
+<section class="container text-center mb-10">
+  <h1 class="w-50 mx-auto">Formation</h1>
+  <h2 class="w-150 mx-auto"></h2>
+</section>
+
+<section class="container mb-10">
+  <div class="row">
+
+    <div class="col-md-4">
+      <img class="w-30"  src="img/Icon formation-md-livres.png" alt="image formation">
+    </div>
+
+    <ul class="col-md-8 row list-unstyled">
+    <li class="col-md-6 d-flex align-items-start">
+      <img class="mr-2" src="img/Icon ionic-md-flower.png" alt="">
+      <div>
+        <h2>Concepteur et Développeur<br>d'Applications</h2>
+        <h3>2021</h3>
+        <h3>Human Booster Lyon-Villeurnanne.</h3>
+      </div>
+    </li>
+    <li class="col-md-6 d-flex align-items-start">
+      <img class="mr-2" src="img/Icon ionic-md-flower.png" alt="">
+      <div>
+        <h2>Brevet Pilote ULM</h2>
+        <h3>2016</h3>
+        <h3>DGAC Lyon (Niveau instructeur).</h3>
+      </div>
+    </li>
+    <li class="col-md-6 d-flex align-items-start">
+      <img class="mr-2" src="img/Icon ionic-md-flower.png" alt="">
+      <div>
+        <h2>Diplome National d'Oenologie</h2>
+        <h3>Bordeaux - 1998</h3>
+        <h3>Viticulture et Oenologie, chimie et analyse des vins.</h3>
+      </div>
+    </li>
+    <li class="col-md-6 d-flex align-items-start">
+      <img class="mr-2" src="img/Icon ionic-md-flower.png" alt="">
+      <div>
+        <h2>Ingénieur Agro-Sup Agronomie</h2>
+        <h3>Dijon - 1995</h3>
+        <h3>Agronomie des sols et gestion des élevages.</h3>
+      </div>
+    </li>
+    </ul>
+
+  </div>
+</section>
+
+
+
+    <section id="fabrication">
+      <div class="containertext-center text-white py-2">
+      <div class="row">
+      <h1 class="col-md-4">Compétences <br>Back et Front</h1>
+      <ul class="col-md-8 row list-unstyled">
+        <li class="col-md-6 d-flex align-items-start"> 
+          <img class="w-25 mr-3 rounded" src="img/langage/python.png" alt="image python" style="min-height:110px; ">
+          <div>
+            <h2>Utilisation de Python et de Serveur web léger Cherrypy, Flask sur nano-ordinateur</h2>
+          </div>
+        </li>
+        <li class="col-md-6 d-flex align-items-start">
+          <img class="w-25 mr-3 rounded" src="img/langage/java.png" alt="image java" style="min-height:110px;">
+          <div>
+            <h2>Création d'applications en java avec Hibernate et Spring</h2>
+          </div>
+        </li>
+        <li class="col-md-6 d-flex align-items-start">
+          <img class="w-25 mr-2 rounded" src="img/langage/3logos.jpg" alt="image 3 logos" style="max-height:110px;">
+          <div>
+            <h2>Développement partie front avec Java Script, HTML5, CSS3, Bootstrap</h2>
+          </div>
+        </li>
+        <li class="col-md-6 d-flex align-items-start">
+          <img  class="w-25 mr-2" src="img/langage/droidscript.png" alt="image droidscript" style="max-height:110px;">
+          <div>
+            <h2>Création d'application Android avec l'IDE DroidScript</h2>
+          </div>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </section>
+
+    <section id="concept" class="container my-5 py-3">
+      <h1 class="text-center">Réalisations</h1>
+      <ul class="row text-center mt-5">
+        <li class="col-md-4">
+          <img  class="w-50 mb-2 img-fluid rounded"   src="img/realisation/valise2.png" alt="image valise" style="min-height:125px;">
+          <h1>Pilotage d'oxygénateur</h1>
+          <h2>Application sur tablette android ou smartphone. Contrôle d'automate via une connexion Bluetooth. Développé en Java Script IDE DroidScript</h2>
+        </li>
+        <li class="col-md-4">
+          <img class="w-50 mb-2 img-fluid rounded"   src="img/realisation/chargeur.jpg" alt="image chargeur" style="min-height:130px;">
+          <h1>Application de charge</h1>
+          <h2>Application web de pilotage de chargement de batterie de Vélo électrique. Développée en Java via un micro-serveur installé sur un nano-ordinateur</h2>
+        </li>
+        <li class="col-md-4">
+          <img  class="w-75 mb-2 img-fluid rounded"   src="img/realisation/conduite.png" alt="image conduite" style="min-height:130px; ">
+          <h1>Application de conduite</h1>
+          <h2>Application de conduite sur smartphone : capteur gyroscopique + commnande vocale. Développée en Java Script avec IDE DroidScript</h2>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+      <h3>2021 @ Christophe Durand</h3>
+  </footer>
+
 </body>
 
 </html>
